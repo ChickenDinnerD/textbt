@@ -6,12 +6,13 @@ const service = new class Service extends noteService {};
 
 mainRouter.get('/',
     async (req: Request, res: Response) => {
-        service.getMainPage(req, res);
+        res.send("API is working!");
 });
 
 mainRouter.get('/service', 
     async (req: Request, res: Response) => {
-        service.getNotes(req, res);
+        service.getNotes(req, res)
+
 });
 
 export {mainRouter};

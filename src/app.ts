@@ -1,14 +1,16 @@
 import 'path';
 import 'dotenv/config';
-import express from 'express';
+import cors from "cors";
+import express from "express";
 import { mainRouter } from './router';
 import { connection } from './connection';
 
 const app = express();
 const PORT = process.env.PORT;
 
-app.use(express.static('./src/static'));
+app.use(cors());
 app.use(mainRouter);
+app.use(express.static('./src/static'));
 
 async function ckeckConn() {
     try {
