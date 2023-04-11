@@ -10,7 +10,6 @@ const PORT = process.env.PORT;
 
 app.use(cors());
 app.use(mainRouter);
-app.use(express.static('./src/static'));
 
 async function ckeckConn() {
     try {

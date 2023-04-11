@@ -9,7 +9,7 @@ mainRouter.get('/',
         res.send("API is working!");
 });
 
-mainRouter.get('/service', 
+mainRouter.get('/service',
     async (req: Request, res: Response) => {
         service.getNotes(req, res)
 
