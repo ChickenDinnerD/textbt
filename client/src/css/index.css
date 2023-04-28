@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    overflow-x: hidden;
+}
+
+.lefthand-image {
+    position: absolute;
+    z-index: 9998;
+    height: 100vh;
+    width: 33%;
+    top: 0;
+    left: 17%;
+    object-fit: cover;
+    animation: unfold-left-animation 3s linear forwards 1s;
+  }
+  
+
+  .righthand-image {
+    position: absolute;
+    z-index: 9998;
+    height: 100vh;
+    width: 33%;
+    top: 0;
+    right: 17%;
+    object-fit: cover;
+    animation: unfold-right-animation 3s linear forwards 1s;
+  }
+
+  @keyframes unfold-left-animation {
+    0% {
+        left: 17%;
+    }
+    100% {
+        left: 0%;
+    }
+  }
+  
+  @keyframes unfold-right-animation {
+    0% {
+        right: 17%;
+    }
+    100% {
+        right: 0%;
+    }
+  }
+
+  @media (max-width: 1000px) {
+
+    .righthand-image , .lefthand-image  {
+        width: 50%;
+    }
+
+
+.lefthand-image {
+    left: 0%;
+  }
+  
+
+  .righthand-image {
+    right: 0%;
+  }
+
+    @keyframes unfold-left-animation {
+        0% {
+            left: 0%;
+        }
+        100% {
+            left: -50%;
+        }
+      }
+      
+      @keyframes unfold-right-animation {
+        0% {
+            right: 0%;
+        }
+        100% {
+            right: -50%;
+        }
+      }
+  }

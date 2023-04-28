@@ -1,30 +1,6 @@
 /* Nav */
 
-.nav {
-	padding: 20px 0;
-	background-color: var(--nav-bg);
-	border-bottom: 1px solid var(--nav-border);
-	color: var(--nav-text);
-	letter-spacing: normal;
-}
-
-.nav-row {
-	padding-left: 45%;
-	display: center;
-	justify-content: flex-end;
-	align-items: center;
-	column-gap: 30px;
-	row-gap: 20px;
-	flex-wrap: wrap;
-}
-
 .logo {
-	margin-right:100cm;
-	color: var(--nav-text);
-	font-size: 24px;
 	font-family: 'Poppins', sans-serif;
 }
 
-.logo strong {
-	font-weight: 700;
-}
