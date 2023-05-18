@@ -20,7 +20,6 @@ function setModalMaxHeight() {
   }
 }
 
-
 document.addEventListener('DOMContentLoaded', function() {
   setModalMaxHeight();
 });

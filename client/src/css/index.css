@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+.html, body {
     overflow-x: hidden;
 }
 
@@ -16,7 +16,10 @@ html, body {
     object-fit: cover;
     animation: unfold-left-animation 3s linear forwards 1s;
   }
-  
+
+  .note-image {
+    max-width: 75%;
+  }
 
   .righthand-image {
     position: absolute;

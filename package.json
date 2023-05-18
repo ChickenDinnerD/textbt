@@ -6,7 +6,6 @@
   "scripts": {
     "timeout": "sleep 5",
     "start:dev": "nodemon src/app.ts",
-    "start:react": "react-scripts start",
     "migrate:up": "node migration.js up",
     "migrate:down": "node migration.js down"
   },

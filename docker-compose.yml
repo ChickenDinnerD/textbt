@@ -34,6 +34,15 @@ services:
       db:
         condition: service_healthy
 
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    networks:
+      - bridgeNet
+
 networks:
   bridgeNet:
     driver: bridge
